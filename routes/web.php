@@ -15,7 +15,7 @@ use App\Http\Controllers\EmployeeController;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return redirect()->route('employees.index');//view('welcome');
 });
 
 Route::resource('employees', EmployeeController::class);
